@@ -1,5 +1,7 @@
 function ff2mpv(url) {
-    browser.runtime.sendNativeMessage("ff2mpv", { url: url });
+    browser.tabs.executeScript({
+        code: `window.location = "ytb://` + url + `";`
+    });
 }
 
 browser.contextMenus.create({

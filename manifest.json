@@ -1,7 +1,7 @@
 {
     "description": "Tries to play links in MPV",
     "manifest_version": 2,
-    "name": "ff2mpv",
+    "name": "ff2mpv (for Windows)",
     "version": "3.0",
 
     "icons": {
@@ -19,8 +19,8 @@
 
     "applications": {
         "gecko": {
-            "id": "ff2mpv@yossarian.net",
-            "strict_min_version": "50.0"
+            "id": "ff2mpv@eastmarch.github.com",
+            "strict_min_version": "57.0"
         }
     },
 
@@ -28,5 +28,5 @@
         "scripts": ["ff2mpv.js"]
     },
 
-    "permissions": ["nativeMessaging", "contextMenus", "activeTab"]
+    "permissions": ["contextMenus", "activeTab"]
 }

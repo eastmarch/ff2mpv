@@ -1,4 +1,4 @@
-ff2mpv
+ff2mpv (for Windows)
 ======
 
 This is a Firefox addon for playing URLs in MPV.
@@ -10,16 +10,13 @@ context button.
 
 ## Usage
 
-**IMPORTANT**: If you update the addon in your browser, **make sure to update the native host as
-well**!
+**REQUIREMENTS**: No external helper is needed. Except for "youtube-dl" being on the same folder as mpv.
 
-First, install the addon from [AMO](https://addons.mozilla.org/en-US/firefox/addon/ff2mpv/).
+1. Add YTB protocol to the registry (it will redirect the URL to MPV). Full path to the MPV executable must be replaced in the ".reg" file to reflect your installation.
 
-Then, follow your system's installation directions on the Wiki:
+2. Copy the "portable_config' folder the same place where MPV is. It contains a lua script that makes MPV handle the YTB protocol and extract the URL.
 
-Linux: https://github.com/woodruffw/ff2mpv/wiki/Installation-on-Linux
-
-macOS: https://github.com/woodruffw/ff2mpv/wiki/Installation-on-macOS
+PS: same reg file and lua script can be used with the Chrome extension "web2mpv".
 
 ## License
 
