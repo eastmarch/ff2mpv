@@ -10,13 +10,13 @@ context button.
 
 ## Usage
 
-**REQUIREMENTS**: No external helper is needed. Except for *[youtube-dl](https://github.com/rg3/youtube-dl)* being on the same folder as mpv.
+**REQUIREMENTS**: *[youtube-dl](https://github.com/rg3/youtube-dl)* needs to be on the same folder as mpv.
 
-1. Add YTB protocol to the registry (*add-ytb-protocol.reg*). It will redirect the URL to MPV. Full path to the MPV executable must be replaced in the ".reg" file to reflect your installation.
+1. Change the path to the MPV executable in *add-ytb-protocol.reg* to reflect your installation. Then add YTB protocol to the registry. 
 
-2. Copy the "portable_config' folder the same place where MPV is. It contains a lua script that makes MPV handle the YTB protocol and extract the URL.
+2. Copy the "portable_config' folder the same place where MPV is. It contains a lua script that makes MPV handle URL's prefixed with "ytb://".
 
-PS: same reg file and lua script can be used with the Chrome extension "web2mpv".
+PS: same registry changes and lua script can be used with the Chrome extension "web2mpv".
 
 ## License
 
