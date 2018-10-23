@@ -1,6 +1,6 @@
 {
     "description": "Tries to play links in MPV",
-    "manifest_version": 1,
+    "manifest_version": 2,
     "name": "ff2mpv (for Windows)",
     "version": "1.0",
 
