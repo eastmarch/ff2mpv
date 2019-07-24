@@ -8,15 +8,26 @@ Clicking the little icon in your toolbar will make MPV attempt to play the curre
 If you want to play a specific URL on a page, right click it and click the "Play in MPV"
 context button.
 
+The extension can also be activated by the *Ctrl+Shift+V* shortcut.
+
+## Requirements
+
+1. Add-on for Firefox. If you're on Linux or Mac, check out the [original version](https://github.com/woodruffw/ff2mpv).
+2. *[youtube-dl](https://github.com/rg3/youtube-dl)* executable needs to be in the same folder as mpv.
+
 ## Usage
+A native client is not needed. All this extension does is to call MPV via the **ytdl://** protocol, which is natively supported. The path to the MPV executable must be added to the registry, though. This can be done by one of the two methods:
 
-**REQUIREMENTS**: *[youtube-dl](https://github.com/rg3/youtube-dl)* needs to be on the same folder as mpv.
+### Method 1
+1. Download the [ytdlProtocol.bat](https://github.com/eastmarch/ff2mpv/archive/master.zip) file.
+2. Move it to the folder where MPV is located (important!).
+3. And run the script a single time. No need for administrator permissions.
 
-1. Change the path to the MPV executable in *add-ytb-protocol.reg* to reflect your installation. Then add YTB protocol to the registry. 
-
-2. Copy the "portable_config' folder the same place where MPV is. It contains a lua script that makes MPV handle URL's prefixed with "ytb://".
-
-PS: same registry changes and lua script can be used with the Chrome extension "web2mpv".
+### Method 2
+1. Download the [ytdlProtocol.reg](https://github.com/eastmarch/ff2mpv/archive/master.zip) file.
+2. Open it with a text editor.
+3. Change the path to the MPV executable inside the file to reflect your installation.
+3. Double-click it on file explorer to merge the changes to the registry.
 
 ## License
 
