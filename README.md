@@ -13,7 +13,8 @@ The extension can also be activated by the *Ctrl+Shift+V* shortcut.
 ## Requirements
 
 1. Add-on for Firefox. If you're on Linux or Mac, check out the [original version](https://github.com/woodruffw/ff2mpv).
-2. *[youtube-dl](http://ytdl-org.github.io/youtube-dl)* executable needs to be in the same folder as mpv.
+2. *[mpv for Windows](https://mpv.srsfckn.biz)*.
+3. *[youtube-dl](http://ytdl-org.github.io/youtube-dl)* executable needs to be in the same folder as mpv.
 
 ## Usage
 A native client is not needed. All this extension does is to call MPV via the **ytdl://** protocol, which is natively supported. The path to the MPV executable must be added to the registry, though. This can be done by one of the two methods:
