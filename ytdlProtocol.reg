@@ -1,0 +1,14 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\ytdl]
+@="URL:YTDL Protocol"
+"URL Protocol"=""
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\ytdl\DefaultIcon]
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\ytdl\shell]
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\ytdl\shell\open]
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\ytdl\shell\open\command]
+@="\"D:\\Tools\\bin\\mpv.exe\" --no-resume-playback --fullscreen -- \"%1\""
