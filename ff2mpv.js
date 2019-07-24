@@ -1,7 +1,7 @@
 function ff2mpv(url) {
     var link = url.replace(new RegExp("^.*//"),"ytdl://")
     browser.tabs.executeScript({
-        code: `window.location = "` + url + `";`
+        code: `window.location = "` + link + `";`
     });
 }
 
