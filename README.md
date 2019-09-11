@@ -12,7 +12,7 @@ The extension can also be activated by the *Ctrl+Shift+V* shortcut.
 
 ## Requirements
 
-1. Add-on for Firefox. If you're on Linux or Mac, check out the [original version](https://github.com/woodruffw/ff2mpv).
+1. [Add-on for Firefox](https://addons.mozilla.org/pt-BR/firefox/addon/ff2mpv-for-windows). If you're on Linux or Mac, check out the [original version](https://github.com/woodruffw/ff2mpv).
 2. *[mpv for Windows](https://mpv.srsfckn.biz)*.
 3. *[youtube-dl](http://ytdl-org.github.io/youtube-dl)* executable needs to be in the same folder as mpv.
 
