@@ -1,7 +1,7 @@
 {
-    "description": "Tries to play links in MPV. Adapted for Windows.",
+    "description": "Tries to play links in MPV.",
     "manifest_version": 2,
-    "name": "ff2mpv (for Windows)",
+    "name": "ff2mpv",
     "version": "1.14",
 
     "icons": {
@@ -28,7 +28,7 @@
 
     "applications": {
         "gecko": {
-            "id": "ff2mpv@eastmarch.github.com",
+            "id": "ff2mpv@daktyl98.github.com",
             "strict_min_version": "57.0"
         }
     },
