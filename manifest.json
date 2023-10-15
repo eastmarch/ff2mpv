@@ -2,7 +2,7 @@
     "description": "Also tries to play links in MPV. Adapted for Windows.",
     "manifest_version": 2,
     "name": "ff2mpv (for Windows)",
-    "version": "1.14",
+    "version": "1.15",
 
     "icons": {
         "16": "icons/icon_16x16.png",
@@ -20,9 +20,9 @@
     "commands": {
         "_execute_browser_action": {
             "suggested_key": {
-                "default": "Ctrl+Shift+V"
+                "default": "Ctrl+Shift+Space"
             },
-            "description": "Play the current URL in mpv"
+            "description": "Play the current tab in mpv"
         }
     },
 
