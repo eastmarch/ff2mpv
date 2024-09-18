@@ -15,21 +15,24 @@ The extension can also be activated by the *Ctrl+Shift+Space* shortcut.
 ## Configuration
 A native client is not needed. All this extension does is call MPV via the **ytdl://** protocol, which is natively supported. The path to the MPV executable must be added to the registry, though. This can be done by one of the methods below.
 
-### Method #1 (Beginner / Windows 11)
-1. Open the Windows Terminal.
-2. Install **[mpv.net](https://github.com/mpvnet-player/mpv.net)** using the package manager: \
-`winget install mpv.net`
-3. Install **[yt-dlp](https://github.com/yt-dlp/yt-dlp#release-files)**: \
-`winget install yt-dlp.yt-dlp`
-4. Go to YouTube and try it on a video.
-5. Select *Always allow this extension to open **ytdl** links*.
+
+### ~~Method #1 (Beginner / Windows 11 / Not working)~~
+1. ~~Open the Windows Terminal.~~
+2. ~~Install **[mpv.net](https://github.com/mpvnet-player/mpv.net)** using the package manager: \
+`winget install mpv.net`~~
+3. ~~Install **[yt-dlp](https://github.com/yt-dlp/yt-dlp#release-files)**: \
+`winget install yt-dlp.yt-dlp`~~
+4. ~~Go to YouTube and try it on a video.~~
+5. ~~Select *Always allow this extension to open **ytdl** links*.~~
 
 ### Method #2 (Advanced / .bat)
 1. Download and extract **[mpv for Windows](https://mpv.io/installation/)** to your destination folder.
-3. Download the **[yt-dlp](https://github.com/yt-dlp/yt-dlp#release-files)** executable and put it inside the MPV folder.
-4. Get the **[ytdlProtocol.bat](https://github.com/eastmarch/ff2mpv/archive/master.zip)** file from this repository.
-5. Move it to the folder where MPV is located (important!).
-6. And run the script a single time. No need for administrator permissions.
+     - [mpv-x86_64-windows-msvc.zip](https://nightly.link/mpv-player/mpv/workflows/build/master/mpv-x86_64-windows-msvc.zip)
+2. Download the **[yt-dlp](https://github.com/yt-dlp/yt-dlp#release-files)** executable and put it inside the MPV folder.
+     - [yt-dlp.exe](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe)
+3. Get the **[ytdlProtocol.bat](https://github.com/eastmarch/ff2mpv/archive/master.zip)** file from this repository.
+4. Extract it to the folder where MPV is located (important!).
+5. And run the script a single time. No need for administrator permissions.
 
 ### Method #3 (Advanced / .reg)
 1. Make sure **mpv** and **yt-dlp** are stored in the same folder.
