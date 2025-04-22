@@ -26,7 +26,7 @@ A native client is not needed. All this extension does is call MPV via the **ytd
 1. Make sure **mpv** and **yt-dlp** are installed or stored in the same folder.
 2. Get the **[ytdlProtocol.bat](https://github.com/eastmarch/ff2mpv/archive/master.zip)** file from this repository.
 3. Extract it to the folder where MPV is located (important!).
-4. And run the script a single time. No need for administrator permissions.
+4. Run the script a single time. No need for administrator permissions.
 5. Go to YouTube and try it on a video.
 6. Select *Always allow this extension to open **ytdl** links*.
 
