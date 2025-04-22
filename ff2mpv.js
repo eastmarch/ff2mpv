@@ -1,14 +1,23 @@
 'use strict';
 
 browser.contextMenus.create({
-  id: 'ff2mpv',
+  id: 'ff2mpv-link',
   title: 'Play link in MPV',
   contexts: ['link'],
 });
 
+browser.contextMenus.create({
+  id: 'ff2mpv-tab',
+  title: 'Play tab in MPV',
+  contexts: ['tab'],
+});
+
 browser.contextMenus.onClicked.addListener((info, tab) => {
-  if (info.menuItemId == 'ff2mpv') {
+  if (info.menuItemId == 'ff2mpv-link') {
     playInMPV(tab.id, info.linkUrl, false);
+  }
+  if (info.menuItemId == 'ff2mpv-tab') {
+    playInMPV(tab.id, info.pageUrl, false);
   }
 });
 
