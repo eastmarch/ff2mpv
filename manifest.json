@@ -1,41 +1,43 @@
 {
-    "description": "Also tries to play links in MPV. Adapted for Windows.",
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "ff2mpv (for Windows)",
-    "version": "1.15",
-
+    "description": "Also tries to play links in MPV. Adapted for Windows.",
+    "version": "1.16",
     "icons": {
-        "16": "icons/icon_16x16.png",
-        "32": "icons/icon_32x32.png",
-        "48": "icons/icon_48x48.png",
-        "64": "icons/icon_64x64.png",
-        "256": "icons/icon_256x256.png"
+        "16": "icons/icon_16.png",
+        "32": "icons/icon_32.png",
+        "48": "icons/icon_48.png",
+        "64": "icons/icon_64.png",
+        "128": "icons/icon_128.png"
     },
-
-    "browser_action": {
-        "default_icon": "icons/icon_48x48.png",
+    "action": {
+        "default_icon": {
+            "16": "icons/icon_16.png",
+            "32": "icons/icon_32.png"
+        },
         "default_title": "Play the current URL in MPV"
     },
-
     "commands": {
-        "_execute_browser_action": {
+        "_execute_action": {
             "suggested_key": {
                 "default": "Ctrl+Shift+Space"
-            },
-            "description": "Play the current tab in mpv"
+            }
         }
     },
-
-    "applications": {
+    "background": {
+        "scripts": [
+            "ff2mpv.js"
+        ]
+    },
+    "permissions": [
+        "contextMenus",
+        "activeTab",
+        "scripting"
+    ],
+    "browser_specific_settings": {
         "gecko": {
             "id": "ff2mpv@eastmarch.github.com",
-            "strict_min_version": "57.0"
+            "strict_min_version": "109.0"
         }
-    },
-
-    "background": {
-        "scripts": ["ff2mpv.js"]
-    },
-
-    "permissions": ["contextMenus", "activeTab"]
+    }
 }
