@@ -23,7 +23,7 @@ This extension can also be activated by the *Ctrl+Shift+Space* shortcut.
 A native client is not needed. All this extension does is call MPV via the **ytdl://** protocol, which is natively supported. The path to the MPV executable must be added to the registry, though. This can be done by one of the methods below.
 
 ### Method #1
-1. Make sure **mpv** and **yt-dlp** are installed or stored in the same folder.
+1. Make sure **mpv** and **yt-dlp** are installed / stored in the same folder.
 2. Get the **[ytdlProtocol.bat](https://github.com/eastmarch/ff2mpv/archive/master.zip)** file from this repository.
 3. Extract it to the folder where MPV is located (important!).
 4. Run the script a single time. No need for administrator permissions.
@@ -31,7 +31,7 @@ A native client is not needed. All this extension does is call MPV via the **ytd
 6. Select *Always allow this extension to open **ytdl** links*.
 
 ### Method #2
-1. Make sure **mpv** and **yt-dlp** are installed or stored in the same folder.
+1. Make sure **mpv** and **yt-dlp** are installed / stored in the same folder.
 2. Get the **[ytdlProtocol.reg](https://github.com/eastmarch/ff2mpv/archive/master.zip)** file from this repository.
 4. Open it with a text editor.
 5. Change the path to the MPV executable in the editor to reflect your installation.
